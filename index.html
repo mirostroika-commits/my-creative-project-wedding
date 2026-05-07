@@ -112,47 +112,47 @@
             };
 
             return (
-                <div className="min-h-screen selection:bg-amber-600 selection:text-white bg-stone-950">
+                <div className="min-h-screen selection:bg-amber-600 selection:text-white bg-stone-950 overflow-x-hidden">
                     
                     {/* Navigation */}
-                    <nav className={`fixed w-full z-50 transition-all duration-700 ${scrolled ? 'bg-stone-950/95 backdrop-blur-md py-4 shadow-2xl' : 'bg-transparent py-8'} px-6 md:px-16 flex justify-between items-center text-white`}>
-                        <div className="text-xl md:text-2xl font-serif tracking-[0.3em] uppercase font-bold">
+                    <nav className={`fixed w-full z-50 transition-all duration-700 ${scrolled ? 'bg-stone-950/95 backdrop-blur-md py-3 shadow-2xl' : 'bg-transparent py-6'} px-6 md:px-12 flex justify-between items-center text-white`}>
+                        <div className="text-xl font-serif tracking-[0.3em] uppercase font-bold">
                             LUMEN <span className="text-amber-500 font-light italic tracking-normal">AI</span>
                         </div>
-                        <div className="hidden lg:flex gap-10 text-[9px] uppercase tracking-[0.25em] font-black opacity-70 text-stone-300">
+                        <div className="hidden lg:flex gap-8 text-[9px] uppercase tracking-[0.25em] font-black opacity-70 text-stone-300">
                             <a href="#viral" className="hover:text-amber-500 transition-colors">Reels Engine</a>
                             <a href="#cases" className="hover:text-amber-500 transition-colors">Трансформация</a>
                             <a href="#locations" className="hover:text-amber-500 transition-colors">Локации</a>
                             <a href="#pricing" className="hover:text-amber-500 transition-colors">B2B Пакеты</a>
                         </div>
-                        <button className="bg-amber-600 hover:bg-amber-700 text-white px-6 md:px-8 py-3 text-[10px] uppercase tracking-widest font-black transition-all border border-amber-500/20 rounded-sm">
+                        <button className="bg-amber-600 hover:bg-amber-700 text-white px-6 py-2.5 text-[10px] uppercase tracking-widest font-black transition-all border border-amber-500/20 rounded-sm">
                             Запросить Демо
                         </button>
                     </nav>
 
                     {/* 1. Hero Section */}
-                    <section className="relative min-h-screen flex flex-col justify-center px-6 md:px-16 pt-24 pb-32 overflow-hidden">
+                    <section className="relative min-h-screen flex flex-col justify-center px-6 md:px-12 pt-20 pb-20 overflow-hidden">
                         <div className="absolute inset-0 z-0 opacity-40">
                            <div className="absolute inset-0 hero-gradient z-10" />
                            <div className="w-full h-full bg-[url('https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=2069&auto=format&fit=crop')] bg-cover bg-center grayscale brightness-50" />
                         </div>
                         
-                        <div className="relative z-20 max-w-6xl">
-                            <div className="flex items-center gap-3 mb-10 md:mb-16">
-                                <span className="h-px w-8 md:w-16 bg-amber-500"></span>
+                        <div className="relative z-20 max-w-5xl">
+                            <div className="flex items-center gap-3 mb-8">
+                                <span className="h-px w-8 md:w-12 bg-amber-500"></span>
                                 <span className="text-amber-500 text-[10px] uppercase tracking-[0.5em] font-black italic">Moscow High-End Production • 2026</span>
                             </div>
                             
-                            <h1 className="text-5xl md:text-8xl lg:text-[8.5rem] font-serif leading-[0.9] mb-12 md:mb-16 tracking-tighter text-white">
+                            <h1 className="text-4xl md:text-6xl lg:text-[5.5rem] font-serif leading-[1] mb-10 tracking-tighter text-white">
                                 Она покупает не платье, <br/>
                                 <span className="text-stone-400 italic font-light">а свой новый Статус.</span>
                             </h1>
                             
-                            <div className="max-w-3xl border-l-2 border-amber-600/40 pl-6 md:pl-10 mb-16 md:mb-20">
-                                <p className="text-xl md:text-3xl text-stone-200 font-light leading-relaxed mb-8">
+                            <div className="max-w-2xl border-l-2 border-amber-600/40 pl-6 md:pl-8 mb-12">
+                                <p className="text-lg md:text-xl text-stone-200 font-light leading-relaxed mb-6">
                                     LUMEN AI — инженерная архитектура вирального контента для ритейла. Мы превращаем базовые кадры в визуальный миф, за который она готова платить х3 от цены масс-маркета.
                                 </p>
-                                <div className="flex flex-wrap gap-8 items-center text-stone-400 font-black text-[10px] tracking-widest uppercase">
+                                <div className="flex flex-wrap gap-6 items-center text-stone-400 font-black text-[10px] tracking-widest uppercase">
                                     <div className="flex items-center gap-2">
                                         <Icons.Zap className="text-amber-500 w-4 h-4" />
                                         <span>72H Delivery</span>
@@ -164,57 +164,57 @@
                                 </div>
                             </div>
                             
-                            <div className="flex flex-col sm:flex-row gap-6">
-                                <button className="group bg-white text-stone-950 px-12 py-7 uppercase tracking-[0.3em] text-xs font-black hover:bg-amber-600 hover:text-white transition-all flex items-center justify-center gap-5 shadow-2xl rounded-sm">
-                                    Оцифровать бренд <Icons.MoveRight className="group-hover:translate-x-2 transition-transform w-5 h-5"/>
+                            <div className="flex flex-col sm:flex-row gap-4">
+                                <button className="group bg-white text-stone-950 px-8 py-4 uppercase tracking-[0.2em] text-[11px] font-black hover:bg-amber-600 hover:text-white transition-all flex items-center justify-center gap-4 shadow-xl rounded-sm">
+                                    Оцифровать бренд <Icons.MoveRight className="group-hover:translate-x-2 transition-transform w-4 h-4"/>
                                 </button>
-                                <button className="group border border-white/20 bg-white/5 backdrop-blur-md px-12 py-7 uppercase tracking-[0.3em] text-xs font-black hover:bg-white/10 transition-all flex items-center justify-center gap-5 rounded-sm">
-                                    Смотреть Reels <Icons.Play size={18} fill="currentColor" />
+                                <button className="group border border-white/20 bg-white/5 backdrop-blur-md px-8 py-4 uppercase tracking-[0.2em] text-[11px] font-black hover:bg-white/10 transition-all flex items-center justify-center gap-4 rounded-sm">
+                                    Смотреть Reels <Icons.Play size={16} fill="currentColor" />
                                 </button>
                             </div>
                         </div>
                     </section>
 
                     {/* 2. Viral Reels Section */}
-                    <section id="viral" className="py-32 px-6 md:px-16 bg-white border-b border-stone-200">
-                        <div className="max-w-7xl mx-auto text-stone-950">
-                            <div className="grid lg:grid-cols-2 gap-24 items-center">
+                    <section id="viral" className="py-20 px-6 md:px-12 bg-white border-b border-stone-200">
+                        <div className="max-w-6xl mx-auto text-stone-950">
+                            <div className="grid lg:grid-cols-2 gap-16 items-center">
                                 <div className="order-2 lg:order-1">
-                                    <div className="inline-flex items-center gap-2 mb-10 px-5 py-2 bg-amber-50 border border-amber-100 rounded-full shadow-sm">
-                                        <Icons.Zap className="text-amber-600 animate-pulse w-4 h-4" />
-                                        <span className="text-[11px] uppercase font-black text-amber-700 tracking-[0.2em]">Viral UGC Engine for Retail</span>
+                                    <div className="inline-flex items-center gap-2 mb-8 px-4 py-1.5 bg-amber-50 border border-amber-100 rounded-full shadow-sm">
+                                        <Icons.Zap className="text-amber-600 animate-pulse w-3 h-3" />
+                                        <span className="text-[10px] uppercase font-black text-amber-700 tracking-[0.2em]">Viral UGC Engine</span>
                                     </div>
-                                    <h2 className="text-4xl md:text-7xl font-serif mb-12 leading-[1.1] tracking-tighter">
+                                    <h2 className="text-3xl md:text-5xl font-serif mb-8 leading-[1.1] tracking-tighter">
                                         Ваше платье в движении. <br/>
                                         <span className="italic text-stone-400 font-light">Взломайте алгоритмы.</span>
                                     </h2>
-                                    <p className="text-stone-600 text-xl font-light leading-relaxed mb-16">
+                                    <p className="text-stone-600 text-lg font-light leading-relaxed mb-10">
                                         Мы проектируем Reels по протоколу <strong>Dopamine Contrast Architecture™</strong>. Ваши ролики — это не просто дефиле, это кинематографичный опыт с бинауральным звуком, который повышает Retention Rate в 2.5 раза.
                                     </p>
-                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                        <div className="p-8 bg-stone-50 border-l-4 border-amber-600 group hover:bg-stone-100 transition-colors">
-                                            <h4 className="font-black text-xs uppercase tracking-widest text-amber-700 mb-3">Haptic Mapping</h4>
-                                            <p className="text-stone-500 text-sm font-light italic leading-relaxed">Имитация тактильности. Зритель «чувствует» фактуру тяжелого шелка и кружева через экран.</p>
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                                        <div className="p-6 bg-stone-50 border-l-4 border-amber-600 group hover:bg-stone-100 transition-colors">
+                                            <h4 className="font-black text-[11px] uppercase tracking-widest text-amber-700 mb-2">Haptic Mapping</h4>
+                                            <p className="text-stone-500 text-xs font-light italic leading-relaxed">Имитация тактильности. Зритель «чувствует» фактуру тяжелого шелка.</p>
                                         </div>
-                                        <div className="p-8 bg-stone-50 border-l-4 border-amber-600 group hover:bg-stone-100 transition-colors">
-                                            <h4 className="font-black text-xs uppercase tracking-widest text-amber-700 mb-3">Motion Morphing</h4>
-                                            <p className="text-stone-500 text-sm font-light italic leading-relaxed">Бесшовные переодевания и мгновенная смена топовых локаций Москвы в ритме музыки.</p>
+                                        <div className="p-6 bg-stone-50 border-l-4 border-amber-600 group hover:bg-stone-100 transition-colors">
+                                            <h4 className="font-black text-[11px] uppercase tracking-widest text-amber-700 mb-2">Motion Morphing</h4>
+                                            <p className="text-stone-500 text-xs font-light italic leading-relaxed">Бесшовные переодевания и мгновенная смена топовых локаций.</p>
                                         </div>
                                     </div>
                                 </div>
                                 
-                                <div className="order-1 lg:order-2 grid grid-cols-2 gap-6 relative">
-                                    <div className="aspect-[9/16] bg-stone-900 overflow-hidden relative shadow-[0_50px_100px_-20px_rgba(0,0,0,0.5)] rounded-sm group cursor-pointer">
-                                        <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center z-10 opacity-0 group-hover:opacity-100 transition-opacity bg-black/40">
-                                            <Icons.Play size={40} className="text-white mb-4" fill="white" />
-                                            <p className="text-white text-[10px] uppercase tracking-widest font-black">Case: Bride_standing_in_wind.mp4</p>
+                                <div className="order-1 lg:order-2 grid grid-cols-2 gap-4 relative">
+                                    <div className="aspect-[9/16] bg-stone-900 overflow-hidden relative shadow-2xl rounded-sm group cursor-pointer">
+                                        <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center z-10 opacity-0 group-hover:opacity-100 transition-opacity bg-black/40">
+                                            <Icons.Play size={32} className="text-white mb-3" fill="white" />
+                                            <p className="text-white text-[9px] uppercase tracking-widest font-black">Case: Bride_wind.mp4</p>
                                         </div>
                                         <img src="https://images.unsplash.com/photo-1510830495811-1bf304e28761?q=80&w=500&auto=format&fit=crop" alt="Bride standing in wind" className="w-full h-full object-cover grayscale brightness-75 group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700" />
                                     </div>
-                                    <div className="aspect-[9/16] bg-stone-950 overflow-hidden relative shadow-[0_50px_100px_-20px_rgba(0,0,0,0.5)] rounded-sm mt-16 group cursor-pointer">
-                                        <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center z-10 opacity-0 group-hover:opacity-100 transition-opacity bg-black/40">
-                                            <Icons.Play size={40} className="text-amber-500 mb-4" fill="currentColor" />
-                                            <p className="text-white text-[10px] uppercase tracking-widest font-black">Case: Bride_smiling_at_sunset.mp4</p>
+                                    <div className="aspect-[9/16] bg-stone-950 overflow-hidden relative shadow-2xl rounded-sm mt-12 group cursor-pointer">
+                                        <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center z-10 opacity-0 group-hover:opacity-100 transition-opacity bg-black/40">
+                                            <Icons.Play size={32} className="text-amber-500 mb-3" fill="currentColor" />
+                                            <p className="text-white text-[9px] uppercase tracking-widest font-black">Case: Bride_sunset.mp4</p>
                                         </div>
                                         <img src="https://images.unsplash.com/photo-1496564738221-825656910609?q=80&w=500&auto=format&fit=crop" alt="Bride smiling at sunset" className="w-full h-full object-cover grayscale brightness-75 group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700" />
                                     </div>
@@ -224,49 +224,49 @@
                     </section>
 
                     {/* 3. Transformation Block */}
-                    <section id="cases" className="py-32 px-6 md:px-16 bg-stone-100 border-y border-stone-200">
-                        <div className="max-w-7xl mx-auto text-stone-950 text-center">
-                            <div className="mb-28">
-                                <h2 className="text-4xl md:text-6xl font-serif mb-8 uppercase tracking-widest tracking-tighter">Оживите ваш манекен</h2>
-                                <p className="text-stone-500 font-light max-w-3xl mx-auto text-xl leading-relaxed">Мы берем рядовые UGC-исходники из вашего салона и за 72 часа трансформируем их в кампейн мирового уровня.</p>
+                    <section id="cases" className="py-20 px-6 md:px-12 bg-stone-100 border-y border-stone-200 overflow-hidden">
+                        <div className="max-w-6xl mx-auto text-stone-950 text-center">
+                            <div className="mb-16">
+                                <h2 className="text-3xl md:text-5xl font-serif mb-6 uppercase tracking-tighter">Оживите ваш манекен</h2>
+                                <p className="text-stone-500 font-light max-w-2xl mx-auto text-lg leading-relaxed">Мы берем рядовые UGC-исходники из вашего салона и за 72 часа трансформируем их в кампейн мирового уровня.</p>
                             </div>
 
-                            <div className="grid md:grid-cols-11 gap-10 items-center bg-white p-10 md:p-16 shadow-2xl rounded-sm relative overflow-hidden">
-                                <div className="absolute top-0 right-0 w-64 h-64 bg-amber-500/5 rounded-full -mr-32 -mt-32 blur-3xl" />
+                            <div className="grid md:grid-cols-11 gap-6 items-center bg-white p-8 md:p-12 shadow-xl rounded-sm relative">
+                                <div className="absolute top-0 right-0 w-48 h-48 bg-amber-500/10 rounded-full -mr-20 -mt-20 blur-3xl" />
                                 
                                 <div className="md:col-span-5 relative group">
-                                   <div className="aspect-[4/5] bg-stone-200 overflow-hidden rounded-sm grayscale flex flex-col items-center justify-center text-center p-14 italic border border-stone-100 shadow-inner">
-                                      <Icons.Smartphone size={50} className="mb-8 opacity-10" />
-                                      <p className="text-stone-400 text-sm font-mono uppercase leading-loose tracking-widest">
+                                   <div className="aspect-[4/5] bg-stone-200 overflow-hidden rounded-sm grayscale flex flex-col items-center justify-center text-center p-8 italic border border-stone-100 shadow-inner">
+                                      <Icons.Smartphone size={40} className="mb-6 opacity-10" />
+                                      <p className="text-stone-400 text-xs font-mono uppercase leading-loose tracking-widest">
                                         [ Исходник: Свадебка.mp4 ]<br/>
-                                        Снято на смартфон.<br/>Обычный свет салона.
+                                        Снято на смартфон.<br/>Обычный свет.
                                       </p>
                                    </div>
-                                   <div className="absolute top-6 left-6 bg-stone-900 text-white text-[10px] uppercase tracking-[0.4em] px-6 py-2.5 font-black border border-white/10 shadow-lg">
-                                     Retail Source (До)
+                                   <div className="absolute top-4 left-4 bg-stone-900 text-white text-[9px] uppercase tracking-[0.3em] px-4 py-2 font-black border border-white/10 shadow-lg">
+                                     Retail Source
                                    </div>
                                 </div>
 
-                                <div className="md:col-span-1 flex justify-center z-10">
-                                  <div className="w-20 h-20 bg-amber-600 text-white rounded-full flex items-center justify-center shadow-[0_20px_50px_-10px_rgba(217,119,6,0.5)] transform rotate-90 md:rotate-0 border-8 border-white animate-float">
-                                    <Icons.ArrowRightLeft size={32} />
+                                <div className="md:col-span-1 flex justify-center z-10 my-4 md:my-0">
+                                  <div className="w-16 h-16 bg-amber-600 text-white rounded-full flex items-center justify-center shadow-lg transform rotate-90 md:rotate-0 border-4 border-white animate-float">
+                                    <Icons.ArrowRightLeft size={24} />
                                   </div>
                                 </div>
 
                                 <div className="md:col-span-5 relative">
-                                   <div className="aspect-[4/5] bg-stone-900 overflow-hidden rounded-sm shadow-2xl flex flex-col items-center justify-center text-center p-14 border border-stone-800 italic">
-                                      <Icons.Sparkles className="mb-8 text-amber-500 opacity-40 animate-pulse w-12 h-12" />
-                                      <p className="text-amber-500 text-sm font-mono uppercase leading-loose tracking-[0.15em] font-bold">
-                                        [ LUMEN: Bride_in_GES2.mp4 ]<br/>
-                                        Vogue Face Asset. <br/>Arri Alexa Cinema Grade.
+                                   <div className="aspect-[4/5] bg-stone-900 overflow-hidden rounded-sm shadow-xl flex flex-col items-center justify-center text-center p-8 border border-stone-800 italic">
+                                      <Icons.Sparkles className="mb-6 text-amber-500 opacity-40 animate-pulse w-10 h-10" />
+                                      <p className="text-amber-500 text-xs font-mono uppercase leading-loose tracking-[0.1em] font-bold">
+                                        [ LUMEN: GES2.mp4 ]<br/>
+                                        Vogue Face Asset.<br/>Cinema Grade.
                                       </p>
                                    </div>
-                                   <div className="absolute top-6 right-6 bg-amber-600 text-white text-[10px] uppercase tracking-[0.4em] px-6 py-2.5 font-black shadow-2xl">
-                                     LUMEN AI (После)
+                                   <div className="absolute top-4 right-4 bg-amber-600 text-white text-[9px] uppercase tracking-[0.3em] px-4 py-2 font-black shadow-lg">
+                                     LUMEN AI
                                    </div>
-                                   <div className="absolute bottom-10 left-10 right-10 bg-stone-950/80 backdrop-blur-xl p-8 border-l-4 border-amber-600 shadow-2xl text-left">
-                                      <p className="text-white text-[12px] uppercase tracking-[0.5em] font-black mb-3">Projected Effect:</p>
-                                      <p className="text-stone-200 text-sm md:text-base font-light italic leading-relaxed tracking-wide">Воспринимаемая стоимость изделия выросла на 300%. Продажа «Статуса», а не платья.</p>
+                                   <div className="absolute bottom-6 left-6 right-6 bg-stone-950/90 backdrop-blur-md p-5 border-l-4 border-amber-600 shadow-xl text-left">
+                                      <p className="text-white text-[10px] uppercase tracking-[0.3em] font-black mb-2">Projected Effect:</p>
+                                      <p className="text-stone-200 text-xs font-light italic leading-relaxed">Продажа «Статуса», а не платья. Восприятие цены +300%.</p>
                                    </div>
                                 </div>
                             </div>
@@ -274,38 +274,38 @@
                     </section>
 
                     {/* 4. Locations */}
-                    <section id="locations" className="py-32 bg-stone-950 text-white overflow-hidden">
-                        <div className="px-6 md:px-16 max-w-7xl mx-auto">
-                            <div className="grid lg:grid-cols-12 gap-24 items-start">
-                                <div className="lg:col-span-4">
-                                    <p className="text-amber-500 text-[10px] uppercase tracking-[0.6em] font-black mb-12 italic">Topology of Desire</p>
-                                    <h2 className="text-5xl md:text-8xl font-serif mb-16 leading-[1] tracking-tight">Локации.<br/><span className="text-stone-600 italic">Коды успеха.</span></h2>
-                                    <div className="space-y-6">
+                    <section id="locations" className="py-20 bg-stone-950 text-white overflow-hidden">
+                        <div className="px-6 md:px-12 max-w-6xl mx-auto">
+                            <div className="grid lg:grid-cols-12 gap-12 items-start">
+                                <div className="lg:col-span-5">
+                                    <p className="text-amber-500 text-[9px] uppercase tracking-[0.4em] font-black mb-8 italic">Topology of Desire</p>
+                                    <h2 className="text-4xl md:text-5xl font-serif mb-10 leading-[1.1] tracking-tight">Локации.<br/><span className="text-stone-600 italic">Коды успеха.</span></h2>
+                                    <div className="space-y-4">
                                         {Object.keys(clusters).map((key) => (
                                             <button 
                                                 key={key}
                                                 onClick={() => setActiveTab(key)}
-                                                className={`w-full text-left p-10 transition-all border-l-2 flex flex-col group relative ${activeTab === key ? 'border-amber-500 bg-white/5 shadow-2xl' : 'border-stone-800 hover:border-stone-600'}`}
+                                                className={`w-full text-left p-6 transition-all border-l-2 flex flex-col group relative ${activeTab === key ? 'border-amber-500 bg-white/5 shadow-xl' : 'border-stone-800 hover:border-stone-600'}`}
                                             >
-                                                <span className={`text-[11px] uppercase tracking-[0.4em] mb-4 transition-colors font-black ${activeTab === key ? 'text-amber-500' : 'text-stone-600'}`}>{clusters[key].location}</span>
-                                                <span className={`font-serif text-xl md:text-3xl transition-all ${activeTab === key ? 'translate-x-4 text-white' : 'text-stone-400 group-hover:translate-x-2 group-hover:text-stone-200'}`}>{clusters[key].title}</span>
+                                                <span className={`text-[9px] uppercase tracking-[0.3em] mb-2 transition-colors font-black ${activeTab === key ? 'text-amber-500' : 'text-stone-600'}`}>{clusters[key].location}</span>
+                                                <span className={`font-serif text-lg md:text-2xl transition-all ${activeTab === key ? 'translate-x-2 text-white' : 'text-stone-400 group-hover:translate-x-1 group-hover:text-stone-200'}`}>{clusters[key].title}</span>
                                             </button>
                                         ))}
                                     </div>
                                 </div>
                                 
-                                <div className="lg:col-span-8 relative aspect-square md:aspect-video bg-stone-900 group shadow-2xl border border-stone-800 overflow-hidden rounded-sm">
+                                <div className="lg:col-span-7 relative aspect-square md:aspect-[4/3] bg-stone-900 group shadow-2xl border border-stone-800 overflow-hidden rounded-sm">
                                    <div 
                                      className="absolute inset-0 bg-cover bg-center transition-all duration-[2000ms] ease-in-out scale-110 group-hover:scale-100 opacity-60"
                                      style={{ backgroundImage: `url(${clusters[activeTab].bgImage})` }}
                                    />
                                    <div className="absolute inset-0 flex items-center justify-center">
-                                      <div className="w-24 md:w-32 h-24 md:h-32 border border-white/10 rounded-full flex items-center justify-center backdrop-blur-md bg-white/5 cursor-pointer hover:bg-amber-600 hover:border-transparent transition-all duration-700 group/btn">
-                                        <Icons.Play size={36} fill="white" className="ml-1 group-hover/btn:scale-125 transition-transform" />
+                                      <div className="w-20 h-20 border border-white/10 rounded-full flex items-center justify-center backdrop-blur-md bg-white/5 cursor-pointer hover:bg-amber-600 hover:border-transparent transition-all duration-700 group/btn">
+                                        <Icons.Play size={28} fill="white" className="ml-1 group-hover/btn:scale-110 transition-transform" />
                                       </div>
                                    </div>
-                                   <div className="absolute bottom-0 left-0 right-0 p-12 md:p-20 bg-gradient-to-t from-black via-black/80 to-transparent">
-                                      <p className="text-stone-200 font-light text-2xl md:text-4xl leading-relaxed max-w-3xl italic font-serif tracking-wide">
+                                   <div className="absolute bottom-0 left-0 right-0 p-8 md:p-10 bg-gradient-to-t from-black via-black/80 to-transparent">
+                                      <p className="text-stone-200 font-light text-xl md:text-2xl leading-relaxed max-w-2xl italic font-serif tracking-wide">
                                         «{clusters[activeTab].description}»
                                       </p>
                                    </div>
@@ -315,83 +315,83 @@
                     </section>
 
                     {/* 5. B2B Pricing Section */}
-                    <section id="pricing" className="py-32 px-6 md:px-16 bg-white border-t border-stone-100 text-stone-900 text-center">
-                        <div className="max-w-7xl mx-auto">
-                            <div className="mb-28">
-                                <h2 className="text-5xl md:text-7xl font-serif mb-10 uppercase tracking-widest tracking-tighter text-stone-950">B2B Пакеты</h2>
-                                <p className="text-stone-400 font-black uppercase tracking-[0.6em] text-[11px]">Инвестируйте в капитализацию вашего ритейла</p>
+                    <section id="pricing" className="py-20 px-6 md:px-12 bg-white border-t border-stone-100 text-stone-900 text-center overflow-x-hidden">
+                        <div className="max-w-6xl mx-auto">
+                            <div className="mb-16">
+                                <h2 className="text-4xl md:text-5xl font-serif mb-6 uppercase tracking-widest tracking-tighter text-stone-950">B2B Пакеты</h2>
+                                <p className="text-stone-400 font-black uppercase tracking-[0.4em] text-[10px]">Инвестируйте в капитализацию вашего ритейла</p>
                             </div>
 
-                            <div className="grid lg:grid-cols-3 gap-12 md:gap-16 items-stretch text-left">
+                            <div className="grid lg:grid-cols-3 gap-6 md:gap-8 items-stretch text-left">
                                 {/* Tier 1 */}
-                                <div className="p-12 md:p-16 border border-stone-100 bg-stone-50 flex flex-col hover:border-stone-300 transition-all group rounded-sm shadow-sm hover:shadow-2xl duration-700">
-                                    <h3 className="text-2xl font-serif mb-4 group-hover:text-amber-600 transition-colors tracking-widest uppercase font-bold text-stone-800">MVP: Тест</h3>
-                                    <p className="text-stone-400 text-[10px] uppercase tracking-[0.5em] mb-14 font-black italic">Visual POC</p>
-                                    <div className="mb-14 flex items-baseline gap-2 flex-wrap">
-                                        <span className="text-3xl lg:text-4xl font-serif italic font-medium whitespace-nowrap">1 500 ₽</span>
-                                        <span className="text-stone-400 text-xs font-black uppercase tracking-widest whitespace-nowrap">/ шт</span>
+                                <div className="p-8 md:p-10 border border-stone-200 bg-stone-50 flex flex-col hover:border-stone-300 transition-all group rounded-sm shadow-sm hover:shadow-xl duration-700">
+                                    <h3 className="text-xl font-serif mb-3 group-hover:text-amber-600 transition-colors tracking-widest uppercase font-bold text-stone-800">MVP: Тест</h3>
+                                    <p className="text-stone-400 text-[9px] uppercase tracking-[0.4em] mb-10 font-black italic">Visual POC</p>
+                                    <div className="mb-10 flex items-baseline gap-2 flex-wrap">
+                                        <span className="text-2xl lg:text-3xl font-serif italic font-medium whitespace-nowrap">1 500 ₽</span>
+                                        <span className="text-stone-400 text-[10px] font-black uppercase tracking-widest whitespace-nowrap">/ шт</span>
                                     </div>
-                                    <ul className="space-y-8 flex-grow mb-20 text-sm md:text-base text-stone-600 font-light italic border-t border-stone-200 pt-12">
-                                        <li className="flex gap-6 items-start"><Icons.ShieldCheck size={24} className="text-stone-300 shrink-0 mt-1" /> Трансформация фото (манекен → модель)</li>
-                                        <li className="flex gap-6 items-start"><Icons.ShieldCheck size={24} className="text-stone-300 shrink-0 mt-1" /> Интерьерная студийная локация</li>
-                                        <li className="flex gap-6 items-start"><Icons.ShieldCheck size={24} className="text-stone-300 shrink-0 mt-1" /> 100% Сохранение ДНК платья</li>
+                                    <ul className="space-y-6 flex-grow mb-12 text-xs md:text-sm text-stone-600 font-light italic border-t border-stone-200 pt-8">
+                                        <li className="flex gap-4 items-start"><Icons.ShieldCheck size={20} className="text-stone-300 shrink-0 mt-0.5" /> Трансформация фото (манекен → модель)</li>
+                                        <li className="flex gap-4 items-start"><Icons.ShieldCheck size={20} className="text-stone-300 shrink-0 mt-0.5" /> Интерьерная студийная локация</li>
+                                        <li className="flex gap-4 items-start"><Icons.ShieldCheck size={20} className="text-stone-300 shrink-0 mt-0.5" /> 100% Сохранение ДНК платья</li>
                                     </ul>
-                                    <button className="w-full border-2 border-stone-950 py-7 text-[12px] font-black uppercase tracking-[0.4em] hover:bg-stone-950 hover:text-white transition-all shadow-md rounded-sm">Заказать тест</button>
+                                    <button className="w-full border-2 border-stone-950 py-4 text-[10px] font-black uppercase tracking-[0.3em] hover:bg-stone-950 hover:text-white transition-all rounded-sm">Заказать тест</button>
                                 </div>
 
                                 {/* Tier 2 */}
-                                <div className="p-12 md:p-16 bg-stone-950 text-white flex flex-col relative shadow-[0_80px_150px_-30px_rgba(217,119,6,0.4)] lg:-translate-y-16 border-t-8 border-amber-600 scale-105 rounded-sm duration-700 z-10">
-                                    <div className="absolute top-0 right-0 bg-amber-600 text-white text-[11px] uppercase tracking-[0.6em] px-12 py-4 font-black shadow-2xl italic">Most Wanted</div>
-                                    <h3 className="text-3xl font-serif mb-4 text-amber-500 uppercase tracking-[0.2em] font-bold">Viral Reels</h3>
-                                    <p className="text-stone-500 text-[10px] uppercase tracking-[0.5em] mb-14 font-black italic">Sales Machine</p>
-                                    <div className="mb-14 flex items-baseline gap-2 text-white flex-wrap">
-                                        <span className="text-3xl lg:text-4xl font-serif italic font-bold tracking-tight whitespace-nowrap">от 25 000 ₽</span>
-                                        <span className="text-stone-600 text-xs font-black uppercase tracking-widest whitespace-nowrap">/ ролик</span>
+                                <div className="p-8 md:p-10 bg-stone-950 text-white flex flex-col relative shadow-[0_40px_80px_-20px_rgba(217,119,6,0.4)] lg:-translate-y-6 border-t-4 border-amber-600 rounded-sm duration-700 z-10">
+                                    <div className="absolute top-0 right-0 bg-amber-600 text-white text-[9px] uppercase tracking-[0.4em] px-6 py-2 font-black shadow-lg italic">Most Wanted</div>
+                                    <h3 className="text-2xl font-serif mb-3 text-amber-500 uppercase tracking-[0.2em] font-bold">Viral Reels</h3>
+                                    <p className="text-stone-500 text-[9px] uppercase tracking-[0.4em] mb-10 font-black italic">Sales Machine</p>
+                                    <div className="mb-10 flex items-baseline gap-2 text-white flex-wrap">
+                                        <span className="text-2xl lg:text-3xl font-serif italic font-bold tracking-tight whitespace-nowrap">от 25 000 ₽</span>
+                                        <span className="text-stone-600 text-[10px] font-black uppercase tracking-widest whitespace-nowrap">/ ролик</span>
                                     </div>
-                                    <ul className="space-y-8 flex-grow mb-20 text-sm md:text-base text-stone-300 font-light border-t border-stone-800 pt-12">
-                                        <li className="flex gap-6 items-start"><Icons.Zap className="text-amber-500 shrink-0 mt-1 w-6 h-6" /> Нейро-морфинг (бесшовные смены)</li>
-                                        <li className="flex gap-6 items-start"><Icons.Zap className="text-amber-500 shrink-0 mt-1 w-6 h-6" /> Топовые локации Москвы на выбор</li>
-                                        <li className="flex gap-6 items-start"><Icons.Zap className="text-amber-500 shrink-0 mt-1 w-6 h-6" /> Бинауральный звук (Audio Design)</li>
+                                    <ul className="space-y-6 flex-grow mb-12 text-xs md:text-sm text-stone-300 font-light border-t border-stone-800 pt-8">
+                                        <li className="flex gap-4 items-start"><Icons.Zap className="text-amber-500 shrink-0 mt-0.5 w-5 h-5" /> Нейро-морфинг (бесшовные смены)</li>
+                                        <li className="flex gap-4 items-start"><Icons.Zap className="text-amber-500 shrink-0 mt-0.5 w-5 h-5" /> Топовые локации Москвы на выбор</li>
+                                        <li className="flex gap-4 items-start"><Icons.Zap className="text-amber-500 shrink-0 mt-0.5 w-5 h-5" /> Бинауральный звук (Audio Design)</li>
                                     </ul>
-                                    <button className="w-full bg-amber-600 py-8 text-[12px] font-black uppercase tracking-[0.5em] hover:bg-amber-700 transition-all shadow-2xl shadow-amber-900/40 border-none rounded-sm">Запустить конвейер</button>
+                                    <button className="w-full bg-amber-600 py-4.5 text-[10px] font-black uppercase tracking-[0.3em] hover:bg-amber-700 transition-all rounded-sm px-4">Запустить конвейер</button>
                                 </div>
 
                                 {/* Tier 3 */}
-                                <div className="p-12 md:p-16 border border-stone-100 bg-stone-50 flex flex-col hover:border-stone-300 transition-all group rounded-sm shadow-sm hover:shadow-2xl duration-700">
-                                    <h3 className="text-2xl font-serif mb-4 group-hover:text-amber-600 transition-colors tracking-widest uppercase font-bold text-stone-800">Couture</h3>
-                                    <p className="text-stone-400 text-[10px] uppercase tracking-[0.5em] mb-14 font-black italic">Global Campaign</p>
-                                    <div className="mb-14 flex items-baseline gap-2 flex-wrap">
-                                        <span className="text-3xl lg:text-4xl font-serif italic text-stone-900 font-bold uppercase whitespace-nowrap">Premium</span>
+                                <div className="p-8 md:p-10 border border-stone-200 bg-stone-50 flex flex-col hover:border-stone-300 transition-all group rounded-sm shadow-sm hover:shadow-xl duration-700">
+                                    <h3 className="text-xl font-serif mb-3 group-hover:text-amber-600 transition-colors tracking-widest uppercase font-bold text-stone-800">Couture</h3>
+                                    <p className="text-stone-400 text-[9px] uppercase tracking-[0.4em] mb-10 font-black italic">Global Campaign</p>
+                                    <div className="mb-10 flex items-baseline gap-2 flex-wrap">
+                                        <span className="text-2xl lg:text-3xl font-serif italic text-stone-900 font-bold uppercase whitespace-nowrap">Premium</span>
                                     </div>
-                                    <ul className="space-y-8 flex-grow mb-20 text-sm md:text-base text-stone-600 font-light italic border-t border-stone-200 pt-12">
-                                        <li className="flex gap-6 items-start"><Icons.ShieldCheck size={24} className="text-stone-300 shrink-0 mt-1" /> Полный кампейн коллекции (25+ артикулов)</li>
-                                        <li className="flex gap-6 items-start"><Icons.ShieldCheck size={24} className="text-stone-300 shrink-0 mt-1" /> Рендер в 8K Cinema Grading</li>
-                                        <li className="flex gap-6 items-start"><Icons.ShieldCheck size={24} className="text-stone-300 shrink-0 mt-1" /> Эксклюзивные права на 10 лет</li>
+                                    <ul className="space-y-6 flex-grow mb-12 text-xs md:text-sm text-stone-600 font-light italic border-t border-stone-200 pt-8">
+                                        <li className="flex gap-4 items-start"><Icons.ShieldCheck size={20} className="text-stone-300 shrink-0 mt-0.5" /> Полный кампейн (25+ артикулов)</li>
+                                        <li className="flex gap-4 items-start"><Icons.ShieldCheck size={20} className="text-stone-300 shrink-0 mt-0.5" /> Рендер в 8K Cinema Grading</li>
+                                        <li className="flex gap-4 items-start"><Icons.ShieldCheck size={20} className="text-stone-300 shrink-0 mt-0.5" /> Эксклюзивные права на 10 лет</li>
                                     </ul>
-                                    <button className="w-full border-2 border-stone-950 py-7 text-[12px] font-black uppercase tracking-[0.4em] hover:bg-stone-950 hover:text-white transition-all shadow-md rounded-sm text-stone-950">Запросить расчет</button>
+                                    <button className="w-full border-2 border-stone-950 py-4 text-[10px] font-black uppercase tracking-[0.3em] hover:bg-stone-950 hover:text-white transition-all rounded-sm text-stone-950">Запросить расчет</button>
                                 </div>
                             </div>
                         </div>
                     </section>
 
                     {/* CTA Final */}
-                    <section className="py-48 md:py-80 px-6 md:px-16 bg-stone-950 text-white relative">
+                    <section className="py-24 md:py-40 px-6 md:px-12 bg-stone-950 text-white relative overflow-hidden">
                         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1543087903-1ac2ec7aa8c5?q=80&w=2000&auto=format&fit=crop')] bg-cover bg-center opacity-10 grayscale mix-blend-overlay" />
-                        <div className="max-w-5xl mx-auto text-center relative z-10">
-                            <h2 className="text-5xl md:text-8xl lg:text-[11rem] font-serif mb-16 md:mb-28 leading-[0.9] tracking-tighter">Готовы изменить <br/><span className="text-amber-500 italic font-light tracking-tight">генетику ваших продаж?</span></h2>
+                        <div className="max-w-4xl mx-auto text-center relative z-10">
+                            <h2 className="text-4xl md:text-6xl lg:text-[6rem] font-serif mb-12 leading-[1] tracking-tighter">Готовы изменить <br/><span className="text-amber-500 italic font-light tracking-tight">генетику ваших продаж?</span></h2>
                             
-                            <div className="mb-20 md:mb-32">
-                               <p className="text-stone-400 text-xl md:text-4xl font-light leading-relaxed max-w-4xl mx-auto italic opacity-90 mb-16 border-b border-stone-800 pb-16">
+                            <div className="mb-16">
+                               <p className="text-stone-400 text-lg md:text-2xl font-light leading-relaxed max-w-2xl mx-auto italic opacity-90 mb-12 border-b border-stone-800 pb-12">
                                  Оставьте ссылку на ваш салон. Мы бесплатно проанализируем ваши исходники и покажем, как за 72 часа увеличить их ценность в 3 раза.
                                </p>
                             </div>
 
-                            <div className="flex flex-col md:flex-row gap-0 max-w-2xl mx-auto p-1 border border-stone-800 bg-stone-900/40 backdrop-blur-3xl shadow-[0_50px_100px_-20px_rgba(0,0,0,0.8)]">
-                               <input type="text" placeholder="Ваш Instagram или Сайт" className="w-full bg-transparent px-10 py-8 text-sm md:text-base outline-none focus:placeholder-transparent transition-all text-stone-100 font-medium" />
-                               <button className="bg-white text-stone-950 px-12 py-8 uppercase text-[12px] font-black tracking-[0.5em] hover:bg-amber-600 hover:text-white transition-all whitespace-nowrap border-none shadow-2xl">Начать аудит</button>
+                            <div className="flex flex-col md:flex-row gap-0 max-w-xl mx-auto p-1 border border-stone-800 bg-stone-900/40 backdrop-blur-xl shadow-2xl">
+                               <input type="text" placeholder="Ваш Instagram или Сайт" className="w-full bg-transparent px-6 py-4 text-sm outline-none focus:placeholder-transparent transition-all text-stone-100 font-medium" />
+                               <button className="bg-white text-stone-950 px-8 py-4 uppercase text-[10px] font-black tracking-[0.3em] hover:bg-amber-600 hover:text-white transition-all whitespace-nowrap border-none">Начать аудит</button>
                             </div>
                             
-                            <div className="mt-48 md:mt-64 flex flex-wrap justify-center gap-12 md:gap-32 text-stone-600 uppercase text-[11px] tracking-[0.8em] font-black opacity-30 pb-48">
+                            <div className="mt-24 md:mt-32 flex flex-wrap justify-center gap-8 md:gap-16 text-stone-600 uppercase text-[9px] tracking-[0.6em] font-black opacity-30">
                                <span>Zero Typography</span>
                                <span className="text-amber-900">•</span>
                                <span>100% Visual Impact</span>
@@ -400,18 +400,18 @@
                     </section>
 
                     {/* Footer */}
-                    <footer className="py-24 px-6 md:px-16 bg-black text-stone-700 border-t border-stone-900">
-                        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left">
-                            <div className="font-serif text-white tracking-[0.6em] mb-16 md:mb-0 text-lg md:text-xl uppercase font-black">LUMEN <span className="text-amber-500 tracking-normal ml-1">AI</span> <span className="opacity-20 text-[11px] font-light italic tracking-widest block md:inline-block md:ml-6 font-sans">Engineered in Moscow 2026</span></div>
-                            <div className="flex flex-wrap justify-center gap-10 md:gap-20 text-[10px] md:text-[11px] uppercase tracking-[0.5em] font-black">
+                    <footer className="py-16 px-6 md:px-12 bg-black text-stone-700 border-t border-stone-900">
+                        <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+                            <div className="font-serif text-white tracking-[0.5em] mb-10 md:mb-0 text-base uppercase font-black">LUMEN <span className="text-amber-500 tracking-normal ml-1">AI</span> <span className="opacity-20 text-[9px] font-light italic tracking-widest block md:inline-block md:ml-4 font-sans">Engineered in Moscow 2026</span></div>
+                            <div className="flex flex-wrap justify-center gap-8 text-[9px] uppercase tracking-[0.4em] font-black">
                                 <a href="#" className="hover:text-amber-500 transition-colors text-white/50">Strategy</a>
                                 <a href="#" className="hover:text-amber-500 transition-colors text-white/50">Terms</a>
                                 <a href="#" className="hover:text-amber-500 transition-colors text-white/50">Methodology</a>
                             </div>
                         </div>
-                        <div className="max-w-7xl mx-auto mt-32 pt-16 border-t border-stone-900/50 flex flex-col md:flex-row justify-between items-center gap-12 text-center md:text-left">
-                           <p className="text-[10px] uppercase tracking-[0.4em] opacity-30 font-bold tracking-widest">© 2026 AI WEDDING ENGINEERING PROTOCOL. ALL RIGHTS RESERVED.</p>
-                           <p className="text-[10px] uppercase tracking-[0.4em] opacity-30 font-bold italic tracking-widest text-amber-900 uppercase font-sans">High-End Bridal Production Foundry</p>
+                        <div className="max-w-6xl mx-auto mt-16 pt-10 border-t border-stone-900/50 flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
+                           <p className="text-[9px] uppercase tracking-[0.3em] opacity-30 font-bold">© 2026 AI WEDDING ENGINEERING PROTOCOL. ALL RIGHTS RESERVED.</p>
+                           <p className="text-[9px] uppercase tracking-[0.3em] opacity-30 font-bold italic text-amber-900 font-sans">High-End Bridal Production Foundry</p>
                         </div>
                     </footer>
                 </div>
